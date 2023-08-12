@@ -24,7 +24,7 @@ typeInput.addEventListener("input", () => {
     if (arrayValue[index] == null) {
       characterSpan.classList.remove("correct");
       characterSpan.classList.remove("incorrect");
-      correcrt = false;
+      correct = false;
     } else if (characterSpan.innerText == arrayValue[index]) {
       characterSpan.classList.add("correct");
       characterSpan.classList.remove("incorrect");
@@ -75,7 +75,7 @@ async function RenderNextSentence() {
 }
 
 let startTime;
-let originTime = 30;
+let originTime = 60;
 function StartTimer() {
   timer.innerText = originTime;
   startTime = new Date();
